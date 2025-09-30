@@ -54,8 +54,6 @@ $$
 VaR = -\text{Percentile}(\Delta P, (1-\alpha) \times 100)
 $$
 
-📄 Notebook: [`1.VaR.Montecarlo.ipynb`](1.VaR.Montecarlo.ipynb)
-
 ## **📈 2. Parametric Method (Variance-Covariance)**
 🔹 **Description:**  
 This approach assumes that **portfolio returns follow a normal distribution** and calculates VaR using the **portfolio's standard deviation** and the corresponding **Z-score** from the normal distribution. It is widely used due to its simplicity and efficiency.
@@ -73,8 +71,6 @@ $$
 VaR = P_0 \cdot \sigma_p \cdot Z_{\alpha} \cdot \sqrt{\frac{T}{252}}
 $$
 
-📄 Notebook: [`2.VaR.Parametric.ipynb`](2.VaR.Parametric.ipynb)
-
 ## **📜 3. Historical Method**
 🔹 **Description:**  
 Unlike the other methods, the **historical approach does not assume any distribution**. Instead, it calculates VaR by directly analyzing past **realized portfolio returns** and selecting the **worst-case losses** at the chosen confidence level.
@@ -87,8 +83,6 @@ VaR = -\text{Percentile}(X, 100 \times (1-\alpha)) \times \text{Portfolio Value}
 $$
 
 This method is **simple and intuitive**, but its accuracy depends on the assumption that **historical returns are representative of future risks**.
-
-📄 Notebook: [`3.VaR.Historical.ipynb`](3.VaR.Historical.ipynb)
 
 ## **📚 Acknowledgments**
 This project is based on the tutorials by **Ryan O'Connell, CFA, FRM** on Value at Risk. His explanations provided great insights and inspiration for this work. You can check out his videos here:
